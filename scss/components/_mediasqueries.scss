@@ -1,0 +1,84 @@
+ @media (max-width: 768px) {
+     body{
+         header{
+             .logo{
+                 display: flex;
+                 align-content: flex-end;
+                 width: 100px;
+                 height: auto;
+             }
+             .menu{
+                width: 100%;
+                
+                ul{
+                    li{
+                        a{
+                        padding: 5px;
+                        margin: 0;
+                        font-size: 15px;
+                        }
+                     }
+             
+                }
+                
+            }
+         }
+         main{
+             .contNos{
+                 .imgbanner{
+                    display: none;
+                }
+             }
+             .formulario{
+                 display: flex;
+                 justify-content: center;
+                 align-content: center;
+                 
+             }
+        }
+     }
+}                  
+              
+         
+       
+ 
+ @media (max-width: 991px) {
+    body{
+        header{
+            .logo{
+                display: flex;
+                align-content: flex-end;
+                width: 150px;
+                height: auto;
+            }
+            .menu{
+                width: 100%;
+                
+                ul{
+                    li{
+                        a{
+                        padding: 5px;
+                        margin: 0;
+                        font-size: 15px;
+                        }
+                     }
+             
+                }
+            }  
+        }
+        main{
+            .contNos{
+                .imgbanner{
+                   display: none;
+               }
+           }
+           .formulario{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            border: none;
+            
+            }  
+       }
+   }
+}

@@ -1,0 +1,257 @@
+@media (max-width: 768px) {
+  body header .logo {
+    display: flex;
+    align-content: flex-end;
+    width: 100px;
+    height: auto; }
+  body header .menu {
+    width: 100%; }
+    body header .menu ul li a {
+      padding: 5px;
+      margin: 0;
+      font-size: 15px; }
+  body main .contNos .imgbanner {
+    display: none; }
+  body main .formulario {
+    display: flex;
+    justify-content: center;
+    align-content: center; } }
+
+@media (max-width: 991px) {
+  body header .logo {
+    display: flex;
+    align-content: flex-end;
+    width: 150px;
+    height: auto; }
+  body header .menu {
+    width: 100%; }
+    body header .menu ul li a {
+      padding: 5px;
+      margin: 0;
+      font-size: 15px; }
+  body main .contNos .imgbanner {
+    display: none; }
+  body main .formulario {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: none; } }
+
+/* mapas */
+.gold {
+  background-color: white;
+  border: 1px solid black;
+  font-size: 50px; }
+
+.platinum {
+  background-color: #910415;
+  border: 1px solid black;
+  font-size: 50px; }
+
+/* extends */
+.card {
+  border: solid 2px #00000a;
+  background-color: white;
+  width: 300px;
+  height: auto;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5%;
+  text-align: center; }
+
+/* estilos html nosotros */
+main .contNos {
+  display: flex;
+  width: 100%; }
+  main .contNos .imgbanner {
+    margin: 10px;
+    width: 90%;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.8); }
+  main .contNos .texto {
+    font-size: 18px;
+    font-style: oblique; }
+
+/* estilos html productos */
+main .cards2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  main .cards2 .card2 {
+    position: relative;
+    overflow: hidden;
+    border: solid 2px #00000a;
+    background-color: white;
+    width: 250px;
+    height: auto;
+    margin: 20px;
+    border-radius: 3%;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.8);
+    cursor: pointer; }
+    main .cards2 .card2 .img {
+      width: 100%;
+      height: 100%;
+      transition: all 500ms ease-out; }
+    main .cards2 .card2 .imgTexto {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(4, 161, 154, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 500ms ease-out;
+      opacity: 0; }
+      main .cards2 .card2 .imgTexto:hover {
+        opacity: 1; }
+      main .cards2 .card2 .imgTexto h4 {
+        padding: 15px 30px;
+        border-radius: 5px;
+        border: 1px solid black;
+        color: #04a19a;
+        opacity: 0;
+        cursor: pointer; }
+        main .cards2 .card2 .imgTexto h4:hover {
+          opacity: 1;
+          background: #95d8d5;
+          color: white;
+          transition: all 500ms ease-out; }
+
+/* estilos html promociones */
+main .cards {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  main .cards .card {
+    border: solid 2px #00000a;
+    width: 250px;
+    height: auto;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5%;
+    text-align: center; }
+    main .cards .card h4 {
+      font-size: 18px; }
+    main .cards .card .button {
+      font-size: 18px;
+      background-color: white;
+      border: 1px solid #4caf50;
+      border-radius: 5px;
+      color: black;
+      -webkit-transition-duration: 0.4s;
+      transition-duration: 0.4s; }
+      main .cards .card .button:hover {
+        background-color: #4caf50;
+        color: white; }
+    main .cards .card .img {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      margin-block-end: 10px;
+      margin-top: 50px;
+      align-items: center; }
+      main .cards .card .img:hover {
+        transform: scale(1.3); }
+
+/* estilos html contacto */
+main .formulario {
+  display: grid;
+  min-width: 100vh;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #05fca9;
+  font-style: oblique;
+  font-weight: 500; }
+
+/* estilos generales y html Index */
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  display: grid;
+  width: 100%;
+  height: 30vh;
+  background-color: #23291f; }
+  header .logo {
+    margin: 0;
+    width: 60%;
+    min-height: 50%; }
+  header .menu {
+    background: linear-gradient(0deg, #010904 24%, #818281 100%);
+    width: 100%;
+    display: flex;
+    justify-content: first baseline;
+    align-items: flex-end; }
+    header .menu ul {
+      margin: 0;
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: flex-end; }
+      header .menu ul li {
+        border-right: 1px solid white;
+        padding: 10px 12px; }
+        header .menu ul li:hover {
+          background: rgba(0, 0, 0, 0.9);
+          font-weight: bold; }
+          header .menu ul li:hover a {
+            color: bisque;
+            font-size: 15px;
+            font-weight: 100px;
+            text-decoration: none; }
+            header .menu ul li:hover a:hover {
+              color: white; }
+
+main {
+  display: grid;
+  justify-content: center;
+  background-color: aliceblue; }
+  main h1 {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    margin-top: 100px;
+    padding: 20px; }
+  main h2 {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    margin-top: 100px; }
+  main .imgcarrusel {
+    width: 200px;
+    height: 300px;
+    justify-content: center; }
+  main .txt {
+    justify-content: center;
+    align-content: center;
+    font-size: 19px;
+    font-style: oblique;
+    padding: 20 px;
+    margin: 10px;
+    font-weight: 500; }
+  main .icons {
+    display: inline-flex;
+    width: 80px;
+    margin: 20px; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: grey; }
+  footer .redesSociales {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end; }
+    footer .redesSociales .der {
+      align-content: center;
+      justify-content: center;
+      width: 50%;
+      margin-top: 20px; }
+    footer .redesSociales .imglogo {
+      align-content: center;
+      justify-content: center;
+      margin-top: 20px;
+      width: 50%; }
